@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Báo Mới</title>
+    <style>
+        /* Cấu hình chung */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #F8F9FA;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Tiêu đề */
+        .news-section h2 {
+            color: #0D47A1; 
+            font-size: 30px;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        /* Định dạng khung "Bão mạng" */
+        .news-category {
+            background: #1E88E5;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: left;
+        }
+
+        .news-category h3 {
+            color: white;
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        /* Bố cục tin tức */
+        .news-items {
+            display: flex;
+            gap: 15px;
+            justify-content: space-between;
+            margin: 10px;
+        }
+
+        .news-items article {
+            width: 30%;
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Định dạng hình ảnh */
+        .news-items img {
+            width: 100%;
+            height: 180px; /* Chiều cao cố định */
+            object-fit: cover; /* Cắt ảnh vừa khung */
+            border-radius: 8px;
+        }
+
+        .news-items p {
+            font-size: 14px;
+            color: black;
+            margin-top: 5px;
+        }
+
+        /* Hiệu ứng hover */
+        .news-items article:hover {
+            transform: scale(1.05);
+            transition: 0.3s ease-in-out;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .news-items {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .news-items article {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="news-section">
+        <h2>Bài tập:</h2>
+        <div class="news-category">
+            <h3>Bão mạng</h3>
+            <div class="news-items">
+                <article>
+                    <img src="https://cly.1cdn.vn/2022/10/04/bvcl.1cdn.vn-2022-10-04-_vv.png" alt="Tin 1">
+                    <p>Vụ mẹ và bé 3 tháng tuổi rơi từ tầng 12 chung cư tử vong: Cảnh sát đặt nghi vấn do trầm cảm.</p>
+                </article>
+                <article>
+<img src="https://image.congan.com.vn/thumbnail/CATP-480-2022-10-2/z3767682694065-b5cd403a59174b93cb07b5f2c26bd3f0_956_1276_398.jpg" alt="Tin 2">
+                    <p>MXH khen ngợi anh CSGT áo dính đầy máu khi đưa cô gái bị nạn đi cấp cứu.</p>
+                </article>
+                <article>
+                    <img src="https://thanhnien.mediacdn.vn/Uploaded/hinhdd/2022_09_24/111-9532.jpg" alt="Tin 3">
+                    <p>Lại xuất hiện clip chốt bán đất nhanh như chớp xôn xao mạng.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
